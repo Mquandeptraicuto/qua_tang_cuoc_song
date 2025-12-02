@@ -40,7 +40,7 @@ if not st.session_state.bi_lua:
         # // Form nhập liệu để dụ nó //
         with st.form("form_nhan_qua"):
             st.write("### 📝 ĐIỀN THÔNG TIN ĐỂ NHẬN")
-            ten = st.text_input("Nhập Tên hoặc Nickname của bạn:", placeholder="Ví dụ: Sang Gay Lọ")
+            ten = st.text_input("Nhập Tên hoặc Nickname của bạn:", placeholder="Ví dụ: Sang DZ")
             id_game = st.text_input("Nhập ID Game:", placeholder="UID: 12345678")
             server = st.selectbox("Chọn Server:", ["Việt Nam", "Quốc Tế", "Mặt Trăng" , "Thanh Hóa"])
             
@@ -125,4 +125,5 @@ else:
     # // Nút bấm để quay lại (nếu nó cay quá muốn thoát) //
     if st.button("Xin lỗi anh Quân , em chừa rồi"):
         st.session_state.bi_lua = False
+
         st.rerun()
